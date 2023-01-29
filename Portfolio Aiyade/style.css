@@ -1,0 +1,902 @@
+@charset "utf-8";
+
+    body {
+    background-color : #02394A;
+    font-family : 'Montserrat', sans-serif;
+    font-family : 'Open Sans', sans-serif;
+    font-family : 'Roboto', sans-serif;
+    }
+    .loader {
+    position : absolute;
+    width : 100%;
+    height : 110%;
+    background-color : #02394A;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    z-index : 5;
+    opacity : 0;
+    animation : loader 1s linear;
+    }
+    .loader span {
+    width : 150px;
+    height : 150px;
+    border : white solid 15px;
+    border-radius : 50%;
+    border-left : 15px solid #2DC7FF;
+    animation : loading 3s linear;
+    }
+    .premieresection {
+    height : 100vh;
+    width : 100%;
+    margin : 0;
+    padding : 0;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 20px;
+    }
+    nav {
+    width : 100%;
+    height : 10%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content : space-between;
+    border-bottom : 1px solid white;
+    align-items : center;
+    }
+    nav h2 {
+    color : white;
+    padding : 5px;
+    text-decoration : none;
+    font-weight : normal;
+    margin-right : 5%;
+    font-size : 16px;
+    }
+    nav .name {
+    color : white;
+    padding : 5px;
+    text-decoration : none;
+    font-weight : normal;
+    margin-right : 5%;
+    animation : texte 1s linear;
+    font-size : 16px;
+    margin-left : 4%;
+    }
+    .texte {
+    font-size : 4rem;
+    width : 100%;
+    overflow : hidden;
+    }
+    .texte p {
+    text-align : center;
+    color : white;
+    animation : texte 1s linear;
+    }
+    .premierleftright {
+    width : 100%;
+    height : 50vh;
+    display : flex;
+    }
+    .left {
+    width : 40%;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    }
+    .left figure {
+    width : 100%;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius : 10px;
+    display : flex;
+    overflow : hidden;
+    }
+    .premierleftright .left figure img {
+    width : 100%;
+    height : 100%;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius : 10px;
+    }
+    .left figure:hover {
+    transition : 2s;
+    transform : scale(1.1);
+    }
+    .right {
+    width : 50%;
+    height : 100%;
+    display : flex;
+    justify-content : flex-end;
+    }
+    .right p {
+    width : 70%;
+    color : white;
+    font-size : 23px;
+    border-top : 1px solid white;
+    margin-left : 10%;
+    margin-top : 10%;
+    padding : 10%;
+    animation : apparition 1s linear;
+    }
+    .french_developper {
+    width : 100%;
+    height : 40vh;
+    color : white;
+    }
+    .french_developper .haut {
+    width : 100%;
+    height : 50%;
+    border-bottom : 1px solid white;
+    border-top : 1px solid white;
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+    overflow : hidden;
+    }
+    .french_developper h1 {
+    font-size : 6rem;
+    }
+    .french_developper .bas {
+    width : 100%;
+    height : 49%;
+    display : flex;
+    align-items : center;
+    border-bottom : 1px solid white;
+    box-sizing : border-box;
+    }
+    .french_developper .bas h1 {
+    padding-right : 10%;
+    animation : translatedecor3 20s infinite;
+    }
+    .french_developper .bas .decor3 {
+    width : 30%;
+    height : 80%;
+    background-color : rgb(255, 255, 255);
+    border-bottom-right-radius : 30px;
+    overflow : hidden;
+    transition : 2s;
+    animation : translatedecor3 20s infinite;
+    }
+    .decor1 {
+    width : 23%;
+    height : 80%;
+    background-color : rgb(255, 255, 255);
+    border-bottom-right-radius : 30px;
+    margin-left : 1%;
+    transform : translateY(-200px);
+    }
+    .decor1anime {
+    width : 23%;
+    height : 80%;
+    background-color : rgb(255, 255, 255);
+    border-bottom-right-radius : 30px;
+    margin-left : 1%;
+    animation : decortranslate 2s linear;
+    transform : translateY(0);
+    }
+    .decor2 {
+    width : 23%;
+    height : 80%;
+    background-color : rgb(255, 255, 255);
+    border-bottom-right-radius : 30px;
+    }
+    .decor2anime {
+    width : 23%;
+    height : 80%;
+    background-color : rgb(255, 255, 255);
+    border-bottom-right-radius : 30px;
+    animation : decor2translate 2s linear;
+    }
+    .image1 {
+    animation : apparition 2s linear;
+    }
+    .frontend {
+    animation : decor2translate 2s linear infinite;
+    }
+    .site {
+    height : 40vh;
+    }
+    .project {
+    background-color : #02394A;
+    text-align : center;
+    width : 100%;
+    height : 30vh;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    overflow : hidden;
+    border-bottom : 2px solid white;
+    color : white;
+    transition : 1s;
+    }
+    .project:hover {
+    background-color : white;
+    color : black;
+    border : white;
+    }
+    .project h1 {
+    margin : 10%;
+    font-size : 3rem;
+    border-right : 1px solid white;
+    padding-right : 10%;
+    }
+    .project .projectcontent {
+    font-size : 10rem;
+    }
+    .projectcontent {
+    display : flex;
+    transition : 1s;
+    width : 40%;
+    align-items : center;
+    }
+    .project .projectcontent .fleche {
+    font-size : 10rem;
+    }
+    .project .projectcontent:hover {
+    transform : translate(-40%);
+    color : black;
+    }
+    .contact {
+    height : 100vh;
+    display : flex;
+    }
+    .contact .left {
+    height : 100%;
+    width : 50%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color : white;
+    flex-direction : column;
+    background-color : #02394A;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    }
+    #circle {
+    width : 400px;
+    height : 400px;
+    background-color : #DADDD8;
+    border-radius : 50%;
+    display : flex;
+    }
+    .circle2 {
+    width : 400px;
+    height : 400px;
+    background-color : rgb(223, 223, 223);
+    border-radius : 50%;
+    display : flex;
+    animation : cdreverse 1s linear;
+    }
+    #circle svg #chemin {
+    font-size : 5rem;
+    }
+    a {
+    color : white;
+    text-decoration : none;
+    }
+  
+    
+    @keyframes cdreverse {
+    0% {
+    transform : translateX(0) rotate(360deg);
+    }
+    90% {
+    transform : translateX(-200px) translateY(500px);
+    opacity : 0;
+    }
+    100% {
+    opacity : 0;
+    }
+    }
+    #chemin {
+    font-size : 2rem;
+    }
+    .contact .left .circle figure {
+    width : 100%;
+    height : 100%;
+    background-color : rgb(103, 79, 79);
+    border-radius : 50%;
+    }
+    .contact .left .circle figure img {
+    width : 100%;
+    height : 100%;
+    border-radius : 50%;
+    }
+    .contact .left h1 {
+    width : 100%;
+    font-size : 4rem;
+    color : white;
+    text-align : center;
+    }
+    .contact .right form {
+    width : 100%;
+    height : 90%;
+    display : flex;
+    flex-direction : column;
+    margin : 10%;
+    color : white;
+    }
+    .contact .right form p {
+    font-size : 16px;
+    border : none;
+    color : white;
+    padding : 0;
+    margin : 1%;
+    width : 20%;
+    }
+    .contact .right {
+    overflow : hidden;
+    }
+    .contactranslate {
+    animation : contactranslate 2s linear;
+    }
+    .contact .right form button {
+    background-color : white;
+    padding : 10px;
+    width : 35%;
+    height : 10%;
+    border : none;
+    margin : 7px;
+    font-size : 20px;
+    border-radius : 4px;
+    }
+    input[type="text"] {
+    width : 90%;
+    margin-top : 7%;
+    margin-bottom : 7%;
+    border-top : none;
+    border-left : none;
+    border-right : none;
+    background-color : #02394A;
+    border-color : white;
+    color : white;
+    }
+    input[type="email"] {
+    width : 90%;
+    margin-top : 7%;
+    margin-bottom : 7%;
+    border-top : none;
+    border-left : none;
+    border-right : none;
+    background-color : #02394A;
+    border-color : white;
+    color : white;
+    }
+    textarea {
+    width : 90%;
+    height : 30%;
+    border : white solid 1px;
+    background-color : #02394A;
+    margin-top : 7%;
+    margin-bottom : 7%;
+    color : white;
+    }
+    .contact .right {
+    height : 100%;
+    width : 50%;
+    background-color : #02394A;
+    display : flex;
+    }
+    .contact .right {
+    height : 100%;
+    width : 50%;
+    background-color : #02394A;
+    display : flex;
+    }
+    .language {
+    z-index : 10;
+    position : relative;
+    right : 50%;
+    font-size : 5rem;
+    }
+    .html {
+    width : 70vh;
+    }
+    .css {
+    width : 90vh;
+    }
+    .javascript {
+    width : 110vh;
+    }
+    .troisemesection {
+    background-color : #02394A;
+    width : 100%;
+    height : 100vh;
+    margin : 0;
+    padding : 0;
+    position : absolute;
+    }
+    .troisemesection h1 {
+    background-color : #02394A;
+    color : rgb(255, 255, 255);
+    font-size : 3rem;
+    padding : 3%;
+    padding-left : 20%;
+    transition : 1s;
+    animation : language 20s linear infinite;
+    border : white solid 1px;
+    }
+    .troisemesection .competence {
+    background-color : #02394A;
+    color : rgb(255, 255, 255);
+    font-size : 3rem;
+    border : white solid 1px;
+    text-align : center;
+    }
+    .troisemesection #grandcercle {
+    width : 70vh;
+    background-color : #DADDD8;
+    height : 70vh;
+    border-radius : 50%;
+    position : absolute;
+    overflow : hidden;
+    bottom : -80%;
+    animation : deuxiememecercle 8s linear infinite;
+    }
+    .troisemesection #grandcercle .css-waves {
+    position : relative;
+    width : 400vh;
+    height : 70vh;
+    left : 0%;
+    bottom : 100%;
+    }
+    #grandcercle:hover .css-waves {
+    animation : wave 1s linear;
+    }
+    .troisemesection .texte_outil {
+    background-color : #02394A;
+    width : 40%;
+    height : 100%;
+    margin-left : 60%;
+    border-radius : 20px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    z-index : -1000;
+    overflow : hidden;
+    }
+    .troisemesection .texte_outil h2 {
+    margin : 20px;
+    border : white solid 1px;
+    padding : 20px;
+    animation : 6s linear infinite;
+    color : white;
+    display : flex;
+    flex-direction : column;
+    }
+    .texte_outil h2:hover {
+    transition : 0.5s;
+    transform : scale(1.3);
+    background-color : white;
+    color : #023153;
+    }
+    .troisemesection #grandcercle div {
+    width : 200px;
+    height : 200px;
+    border-radius : 100px;
+    border : black solid 2px;
+    margin : 20px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    font-size : 20px;
+    position : relative;
+    }
+    .troisemesection .grandcercle div:hover {
+    transition : 1s;
+    background-color : rgb(0, 0, 0);
+    color : white;
+    }
+    .troisemesection #grandcercle .cercle1 {
+    left : 50%;
+    top : 60%;
+    animation : cercle1translate 6s linear infinite;
+    }
+    Z .troisemesection #grandcercle .cercle2 {
+    left : 10%;
+    top : 10%;
+    animation : cercle1translate2 6s linear infinite;
+    }
+    .troisemesection #grandcercle .cercle3 {
+    left : 10%;
+    bottom : 60%;
+    animation : cercle1translate4 6s linear infinite;
+    }
+    .troisemesection #grandcercle .cercle4 {
+    left : 53%;
+    bottom : 120%;
+    animation : cercle1translate4 6s linear infinite;
+    }
+    .troisemesection h1:hover {
+    background-color : #ffffff;
+    color : #023153;
+    letter-spacing : 20px;
+    width : 70%;
+    animation : language 3s linear infinite;
+    }
+    text {
+    font-size : 40px;
+    font-family : arial, sans-serif;
+    text-transform : uppercase;
+    letter-spacing : 20px;
+    fill : black;
+    }
+    .cursor {
+    width : 40px;
+    height : 40px;
+    border-radius : 50%;
+    position : absolute;
+    pointer-events : none;
+    background-color : white;
+    z-index : 9;
+    }
+    .cursor2 {
+    width : 40px;
+    height : 40px;
+    border-radius : 50%;
+    position : absolute;
+    pointer-events : none;
+    background-color : white;
+    animation : cursor 4s linear;
+    }
+    .texte_outil h3 {
+    color : white;
+    z-index : 2;
+    }
+    .barre {
+    width : 80%;
+    height : 50px;
+    border : black solid 1px;
+    border-radius : 15px;
+    background-color : white;
+    z-index : 2;
+    }
+    .barre div {
+    background-color : #2DC7FF;
+    height : 100%;
+    border-radius : 15px;
+    z-index : 2;
+    }
+    .barre .interieur1 {
+    height : 100%;
+    width : 30%;
+    z-index : 2;
+    }
+    .barre .interieur2 {
+    height : 100%;
+    width : 60%;
+    }
+    .barre .interieur3 {
+    height : 100%;
+    width : 50%;
+    }
+    .barre .interieur4 {
+    height : 100%;
+    width : 40%;
+    }
+    .premierleftright .right p {
+    font-size : 23px;
+    color : white;
+    }
+    @keyframes loader {
+    0% {
+    opacity : 1;
+    }
+    90% {
+    opacity : 1;
+    }
+    100% {
+    opacity : 0;
+    }
+    }
+    @keyframes loading {
+    0% {
+    transform : rotate(0);
+    }
+    100% {
+    transform : rotate(600deg);
+    }
+    }
+    @keyframes cursor {
+    0% {
+    transform : scale(0);
+    z-index : 1;
+    }
+    50% {
+    transform : scale(20);
+    z-index : 1;
+    background-color : #2DC7FF;
+    }
+    100% {
+    transform : scale(0);
+    z-index : 1;
+    }
+    }
+    @keyframes deuxiememecercle {
+    0% {
+    transform : rotate(0);
+    }
+    20% {
+    transform : rotate(-18deg) translateX(-30px);
+    }
+    40% {
+    transform : rotate(-15deg);
+    }
+    50% {
+    transform : rotate(-12deg);
+    }
+    90% {
+    transform : rotate(-2deg);
+    }
+    100% {
+    transform : rotate(0deg);
+    }
+    }
+    @keyframes imageproject {
+    0% {
+    transform : scale(1);
+    }
+    50% {
+    transform : scale(0.8);
+    }
+    100% {
+    transform : scale(1);
+    }
+    }
+    @keyframes wave {
+    0% {
+    transform : translate(0);
+    }
+    50% {
+    transform : translateY(-60%) translateX(-250vh);
+    }
+    70% {
+    transform : translateY(-60%) translateX(-100vh);
+    }
+    100% {
+    transform : translate(0);
+    }
+    }
+    @keyframes opacitylanguage1 {
+    0% {
+    opacity : 0;
+    }
+    2% {
+    opacity : 99%;
+    }
+    50% {
+    opacity : 0;
+    }
+    }
+    @keyframes cercle1translate {
+    0% {
+    opacity : 0;
+    }
+    50% {
+    transform : translateX(10px) translateY(10px);
+    content : "voila";
+    }
+    100% {
+    transform : translate(0);
+    }
+    }
+    @keyframes cercle1translate2 {
+    0% {
+    transform : translate(0);
+    }
+    50% {
+    transform : translateX(-20px) translateY(10px);
+    }
+    100% {
+    transform : translate(0);
+    }
+    }
+    @keyframes cercle1translate4 {
+    0% {
+    transform : translate(0);
+    }
+    50% {
+    transform : translateX(4px) translateY(25px);
+    }
+    100% {
+    transform : translate(0);
+    }
+    }
+    @keyframes cercle1translate3 {
+    0% {
+    transform : translate(0);
+    }
+    50% {
+    transform : translateX(-10px) translateY(25px);
+    }
+    100% {
+    transform : translate(0);
+    }
+    }
+    @keyframes language {
+    0% {
+    letter-spacing : 0;
+    }
+    50% {
+    letter-spacing : 20px;
+    }
+    100% {
+    letter-spacing : 0;
+    }
+    }
+    @keyframes glisseimage {
+    0% {
+    transform : translateX(0%);
+    }
+    50% {
+    transform : translateX(-100%);
+    }
+    100% {
+    transform : translateX(0%);
+    }
+    }
+    @keyframes apparition {
+    0% {
+    opacity : 0;
+    }
+    100% {
+    opacity : 1;
+    }
+    }
+    @keyframes texte {
+    0% {
+    transform : translateY(-90px);
+    }
+    100% {
+    transform : translateY(0);
+    }
+    }
+    @keyframes decortranslate {
+    0% {
+    transform : translateY(-200px);
+    }
+    100% {
+    transform : translateY(0);
+    }
+    }
+    @keyframes translatedecor3 {
+    0% {
+    transform : translateX(0%);
+    }
+    50% {
+    transform : translateX(90%);
+    }
+    100% {
+    transform : translateX(0%);
+    }
+    }
+    @keyframes contact {
+    0% {
+    transform : scale(1);
+    }
+    100% {
+    transform : scale(1.4);
+    }
+    }
+    @keyframes contactranslate {
+    0% {
+    transform : translateX(-200px);
+    }
+    100% {
+    transform : translateX(0);
+    }
+    }
+    /*version tablette*/
+    @media screen and (min-width: 576px) and (max-width: 960px) {
+    .premierleftright {
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    margin : 0;
+    padding : 0;
+    }
+    .premierleftright .left {
+    width : 100%;
+    height : 50%;
+    }
+    .premierleftright .left figure {
+    width : 50%;
+    height : 100%;
+    }
+    .premierleftright .right {
+    width : 100%;
+    height : 50%;
+    font-size : 13px;
+    display : flex;
+    align-items : center;
+    }
+    .premierleftright .right p {
+    padding-top : 0;
+    font-size : 14px;
+    width : 100%;
+    }
+    .french_developper .bas .decor3 {
+    display : none;
+    }
+    .french_developper .bas .frontend1 {
+    animation : none;
+    }
+    .contact {
+    height : 100%;
+    width : 100%;
+    flex-direction : column;
+    }
+    .contact .left {
+    width : 100%;
+    height : 10%;
+    flex-direction : column;
+    margin : 0;
+    padding : 0;
+    }
+    .contact .right {
+    width : 100%;
+    height : 80%;
+    }
+    textarea {
+    height : 40vh;
+    }
+    #circle {
+    display : none;
+    }
+    .troisemesection h1 {
+    width : 40vh;
+    animation : none;
+    }
+    .troisemesection #semicercle {
+    margin : 0;
+    width : 60vh;
+    background-color : #ddd9d8;
+    height : 60vh;
+    bottom : -50%;
+    }
+    .troisemesection .texte_outil {
+    margin-top : 20%;
+    align-items : center;
+    }
+    .bas .frontend {
+    animation : none;
+    }
+    }
+
+    /*version telephone*/
+    @media screen and (max-width: 576px) {
+    .texte {
+    font-size : 28px;
+    }
+    .premierleftright .left {
+    width : 100%;
+    height : 100%;
+    }
+    .premierleftright .left figure {
+    margin-top : 30%;
+    width : 100%;
+    height : 60%;
+    background-color : red;
+    }
+    .premierleftright .right {
+    width : 100%;
+    height : 80%;
+    }
+    .troisemesection h1 {
+    width : 40vh;
+    animation : none;
+    font-size : 2rem;
+    }
+    .troisemesection #grandcercle {
+    top : 130%;
+    }
+    .troisemesection #grandcercle div {
+    width : 100px;
+    height : 100px;
+    animation : none;
+    }
+    }
